@@ -43,25 +43,17 @@ This project demonstrates the implementation of Binary Phase Shift Keying (BPSK)
 To compile the BPSK demodulation program:
 
 ```bash
-gcc -o DemoBPSK DemoBPSK.c -lm
-```
-
-To run the demodulation program:
-
-```bash
-./DemoBPSK -i output.wav -o rec.txt -fs 48000 -baud 1200 -f0 2400
-```
-
-### BPSK Modulation
-
-To compile the BPSK modulation program:
-
-```bash
-gcc -o bpsk BPSKC.c -lm
+gcc -o BPSK2 BPSK2.c -lm
 ```
 
 To run the modulation program:
 
 ```bash
-./bpsk -i input.txt -o output.wav -fs 48000 -baud 1200 -f0 2400
+./BPSK2 -mode modulate -i 1.txt -o output.wav -fs 8000 -baud 300 -f0 1500
+```
+
+To run the demodulation program:
+
+```bash
+./BPSK2 -mode demodulate -i output.wav -o here.txt -fs 8000 -baud 300 -f0 1500
 ```
