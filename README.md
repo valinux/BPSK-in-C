@@ -38,9 +38,9 @@ This project demonstrates the implementation of Binary Phase Shift Keying (BPSK)
 
 ## Compilation and Usage
 
-### BPSK Demodulation
+### BPSK modulation
 
-To compile the BPSK demodulation program:
+To compile the BPSK program:
 
 ```bash
 gcc -o BPSK2 BPSK2.c -lm
